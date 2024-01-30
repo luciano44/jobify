@@ -1,4 +1,16 @@
+import LinksDropdown from "./LinksDropdown"
+import { UserButton } from "@clerk/nextjs"
+import ThemeToggle from "./ThemeToggle"
+
 const NavBar = () => {
-  return <h2 className="text-4xl">NavBar</h2>
+  return (
+    <nav className="bg-muted py-4 sm:px-16 lg:px-24 px-4 flex items-center justify-between">
+      <LinksDropdown />
+      <div className="flex items-center gap-x-4">
+        <ThemeToggle />
+        <UserButton afterSignOutUrl="/" />
+      </div>
+    </nav>
+  )
 }
 export default NavBar
