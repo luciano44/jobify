@@ -39,3 +39,5 @@ export const createAndEditJobSchema = z.object({
   status: z.nativeEnum(JobStatus),
   mode: z.nativeEnum(JobMode),
 })
+
+export type createAndEditJobType = z.infer<typeof createAndEditJobSchema>
