@@ -1,9 +1,11 @@
+"use client"
 import { Archive } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Logo from "@/assets/logo.svg"
 import Main from "@/assets/main.svg"
 import Link from "next/link"
+import { toast } from "sonner"
 
 export default function Home() {
   return (
